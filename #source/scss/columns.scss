@@ -1,0 +1,109 @@
+.column {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        border: 2px solid transparent;
+        border-image: linear-gradient(184.78deg, rgba(255, 110, 48, 0.1) -4.6%, rgba(255, 110, 48, 0) 96.79%);
+        border-image-slice: 1;
+        border-radius: inherit;
+        display: none;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 65px;
+        height: 65px;
+        background: rgba(255, 110, 48, 0.6);
+        filter: blur(50px);
+        display: none;
+    }
+    &:hover{
+        &::before {
+            display: block;
+        }
+        &::after {
+            display: block;
+        }
+        cursor: pointer;
+        background: rgba(40, 48, 54, 0.6);
+        backdrop-filter: blur(50px);
+    }
+}
+.title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 0.9);
+}
+.subtitle {
+    max-width: 430px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.55);
+}
+@media (max-width:850px) {
+        .title {
+        font-size: 38px;
+        line-height: 52px;
+    }
+    .subtitle {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+.icon {
+    margin: 0px 30px 0px 0px;
+}
+.title-item {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.78);
+    margin: 0px 0px 3px 0px;
+}
+.cost-item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(255, 165, 55, 0.55);
+    margin: 0px 0px 30px 0px;
+}
+.subtitle-item {
+    font-weight: 400;
+    
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0px 0px 30px 0px;
+}
+.like-icon {
+    margin: 0px 12px 0px 0px;
+    border-radius: 10px;
+    &:hover {
+        box-shadow: 0px 2px 4px #1e252b;
+    }
+}
+.download-icon {
+    &:hover {
+        box-shadow: 0px 2px 4px #1e252b;
+    }
+}
+.btn-item {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 42px;
+    color: rgba(255, 255, 255, 0.55);
+    padding: 9px 35px;
+    border-radius: 8px;
+    &:hover {
+        cursor: pointer;
+        background: #FF6E30;
+        color: #FFFFFF;
+    }
+}
