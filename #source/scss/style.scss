@@ -437,6 +437,23 @@ body.lock {
             line-height: 28px;
 		}
     }
+    @media (max-width:650px) {
+        &__load-more-btn {
+            a {
+                font-size: 15px;
+                line-height: 23px;
+                color: #FF6E30;
+                padding: 17px 38px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
+                &:hover {
+                    background: #FF6E30;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
 
 //------------------------------------------TRUSTED MORE----------------------------------
@@ -631,6 +648,17 @@ body.lock {
         &__column {
             flex: 1 0 100%;
             margin: 0px auto 0px auto;
+		}
+        &__btn {
+            font-size: 15px;
+            line-height: 23px;
+            color: #FFFFFF;
+            padding: 15px 30px;
+            background: #FF6E30;
+            border-radius: 8px;
+            &:hover {
+                background: rgba(255, 72, 66, 1);
+            }
 		}
     }   
 }
