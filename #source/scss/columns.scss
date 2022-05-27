@@ -83,21 +83,36 @@
     margin: 0px 0px 30px 0px;
 }
 .like-icon {
+    max-height: 42px;
     margin: 0px 12px 0px 0px;
     border-radius: 10px;
     &:hover {
         box-shadow: 0px 2px 4px #1e252b;
     }
 }
+.like-icon.active {
+    svg path {
+        fill: #FD3B41;
+        // stroke: #FD3B41;
+        fill-opacity: 100%; 
+    }
+}
 .download-icon {
+    border-radius: 10px;
+    max-height: 42px;
     &:hover {
         box-shadow: 0px 2px 4px #1e252b;
+    }
+}
+.download-icon.active {
+    svg path {
+        fill-opacity: 55%; 
     }
 }
 .btn-item {
     font-weight: 600;
     font-size: 16px;
-    line-height: 42px;
+    line-height: 24px;
     color: rgba(255, 255, 255, 0.55);
     padding: 9px 35px;
     border-radius: 8px;
