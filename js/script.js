@@ -38,26 +38,22 @@ let like = document.querySelectorAll('.like-icon');
 for (let i = 0; i < like.length; i++) {
     like[i].addEventListener('click', function () {
         like[i].classList.toggle('active');
-        if (like[i].ClassName = ' active') {
-            like[i].src="img/icons/like-r.png";
-        } else if (!(like[i].ClassName = ' active')) {
-            like[i].src="img/icons/like.png";
-        }
-});
+    });
 };
 
 let download = document.querySelectorAll('.download-icon');
 for (let i = 0; i < download.length; i++) {
     download[i].addEventListener('click', function () {
         download[i].classList.toggle('active');
-        if (download[i].ClassName = ' active') {
-            download[i].src="img/icons/download-w.png";
-        } else if (!(like[i].ClassName = ' active')) {
-            download[i].src="img/icons/download.png";
-        }
-});
+    });
 };
 
+$(document).ready(function () {
+    $('.mostpopulartools__load-more-btn').click(function (event) {
+        $('.mostpopulartools__row-2').addClass('active');
+        $('.mostpopulartools__load-more-btn').addClass('active');
+    });
+});
 
 $(document).ready(function () {
 	$('.slider').slick({
